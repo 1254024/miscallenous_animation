@@ -1,0 +1,96 @@
+*{
+    margin: 0;padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    animation: bg 10s infinite;
+}
+@keyframes bg {
+    10%{
+        background-color: red;
+    }
+    30%{
+        background-color: orange;
+    }
+    50%{
+        background-color: aqua;
+    }
+    
+    70%{
+        background-color: teal;
+    }
+    90%{
+        background-color: firebrick;
+    }
+    100%{
+        background-color: hotpink;
+    }
+}
+.outer{
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    animation: box 5s infinite;
+}
+@keyframes box {
+    50%{
+        transform: translateX(200%) rotate(360000deg);
+    }
+    100%{
+        transform: translateX(-100000%) rotate(360000deg);
+    }
+    
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: skyblue;
+}
+
+.inner{
+    font-weight: 900;
+    font-size: xx-large;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    animation: progress 5s infinite;
+    animation-delay: 1ms;
+}
+@keyframes progress {
+ 10%{
+    color: red;
+ }
+ 30%{
+    color: orange;
+ }
+ 50%{
+    color: green;
+ }
+ 70%{
+    color: gray;
+ }
+ 90%{
+    color: violet;
+ }
+ 100%{
+    color: yellow;
+ }
+
+ 
+
+}
